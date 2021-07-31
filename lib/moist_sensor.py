@@ -15,4 +15,5 @@ def value_in_millivolt(pin_in, pin_out):
 
     time.sleep(2)
 
-    return volts
+    volt_reference = 4.096
+    return volts / volt_reference
