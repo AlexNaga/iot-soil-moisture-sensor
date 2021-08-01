@@ -33,7 +33,6 @@ def check_moist(moist_level):
 
     time.sleep(3)
     pycom.rgbled(BLACK)
-    return moist_level
 
 
 def send_data(moist_level):
