@@ -9,14 +9,13 @@ pycom.heartbeat(False)  # turn off the default LED
 GREEN = 0x00FF00
 RED = 0xFF0000
 BLUE = 0x0000FF
-BLACK = 0x000000
+BLACK = 0x000000>
 
 
 def get_moist_level():
-    ao_pin = "P16"  # pin to read from
-    vcc_pin = "P11" # pin we want to turn on/off
+    ao_pin = "P16" >
+    vcc_pin = "P11"
 
-    # The soil sensor values are between ~250-999 mV, where the lowest value means the plant is moist and 999 is dry
     moist_level = moist_sensor.value_in_millivolt(ao_pin, vcc_pin)
     return moist_level
 
